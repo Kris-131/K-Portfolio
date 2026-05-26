@@ -1,0 +1,10 @@
+index-2-updated-2-styled.html
+extract_assets.js
+extract_remaining_image.js
+find_remaining.js
+find_large_lines.js
+clean_remaining_pdfs.js
+split_code.js
+index_clean_temp.html
+node_modules/
+.DS_Store
