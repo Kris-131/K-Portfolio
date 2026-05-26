@@ -164,12 +164,7 @@
     });
 
     /* ===== RESUME DOWNLOAD ===== */
-    /* Download Functions */);
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url; a.download = 'Krish_Mavani_CV.pdf';
-      a.click(); URL.revokeObjectURL(url);
-    }
+
     ['dl-btn', 'nav-dl'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.addEventListener('click', e => { e.preventDefault(); downloadResume(); });
@@ -210,21 +205,7 @@
       });
       card.addEventListener('mouseleave', () => { card.style.transform = ''; });
     });
-  </script>
-<script>
-var _btechPDF = "assets/Krish_Mavani_BTech_Results.pdf";
-var _result12PDF = "assets/Krish_Mavani_12th_Results.pdf";
-var _result10PDF = "assets/Krish_Mavani_10th_Results.pdf";
-function _dlPDF(b64, filename) {
-  var bc = atob(b64), bn = new Uint8Array(bc.length);
-  for (var i=0;i<bc.length;i++) bn[i]=bc.charCodeAt(i);
-  var a = document.createElement("a");
-  a.href = URL.createObjectURL(new Blob([bn],{type:"application/pdf"}));
-  a.download = filename; a.click(); URL.revokeObjectURL(a.href);
-}
-/* Results Functions */
-</script>
-<div class="km-cursor"></div><script>
+
 (function(){
   // Scroll reveal
   const revealEls = document.querySelectorAll('.km-reveal');
